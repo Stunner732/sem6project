@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mumbai Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .navbar {
+  background-color: #007bff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+#logo{
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px;
+}
+  
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand"><img src="logo.png" id="logo">  PriceValuePredict</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>>
+  </nav>
+<div class="img"></div>
+<form class="form">
+	<h2>Area (Square Feet)</h2>
+    <input class="area"  type="number" id="uiSqft" class="floatLabel" name="Squareft" value="1000" min="200" max="5000">
+	<h2>BHK</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5</label>
+	</div>
+	</form>
+<form class="form">
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>bandra</option>
+        <option>airoli</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+
+	<div id="uiEstimatedPrice" class="result">	
+    
+
+  </div>
+</body>
+</html>

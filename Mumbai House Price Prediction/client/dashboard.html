@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  
+    .navbar {
+  background-color: #007bff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+#logo{
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px;
+}
+.card {
+        width: 400px;
+        margin: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-title {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .card-image {
+        width: 400px;
+        height: 400px;
+        /*display: none;*/
+        
+    }
+
+    .card:hover .card-image {
+        display: block;
+    }
+
+  
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand"><img src="logo.png" id="logo">  PriceValuePredict</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="predict_price.html">Predict Price</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="img"></div>
+  <div class="card-container">
+    
+    <div class="card">
+      <h2 class="card-title">Frequency of BHK</h2>
+      <img class="card-image" src="frequency.png" alt="Image 1">
+  </div>
+  <div class="card">
+      <h2 class="card-title">Frequncy of Age</h2>
+      <img class="card-image" src="frequency age.png" alt="Image 2">
+  </div>
+  <div class="card">
+    <h2 class="card-title">Frequency of Status</h2>
+    <img class="card-image" src="frequency status.png" alt="Image 1">
+</div>
+<div class="card">
+    <h2 class="card-title">Frequncy of Type</h2>
+    <img class="card-image" src="frequency type.png" alt="Image 2">
+</div>
+<div class="card">
+  <h2 class="card-title">Frequency of Price</h2>
+  <img class="card-image" src="frequency price.png" alt="Image 1">
+</div>
+<div class="card">
+  <h2 class="card-title">Area Vs BHK</h2>
+  <img class="card-image" src="area vs bhk.png" alt="Image 2">
+</div>
+<div class="card">
+  <h2 class="card-title">Heatmap for BHK vs Area vs Price</h2>
+  <img class="card-image" src="heatmap.png" alt="Image 1">
+</div>
+<div class="card">
+  <h2 class="card-title">Confusion Matrix For Area and BHK</h2>
+  <img class="card-image" src="confusion matrix.png" alt="Image 2">
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

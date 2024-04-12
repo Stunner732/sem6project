@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Price Prediction</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      color: black;
+    }
+    .navbar {
+      background-color: #007bff;
+    }
+    footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.img {
+  background: url('download.jpeg');
+	background-repeat: no-repeat;
+  background-size: auto;
+  background-size:100% 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(15px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #fffafafd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 20px;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card-text{
+    display: none;
+  }
+  .card:hover .card-text{
+    display: block;
+  }
+  .img-container {
+  display: flex;
+  justify-content: center; /* horizontally center the image */
+  align-items: center; /* vertically center the image */
+  height: 100vh; /* make the container fill the viewport height */
+}
+
+#img{
+  
+  width: 1000px; /* allow the image to resize while maintaining its aspect ratio */
+  height: auto; /* allow the image to resize while maintaining its aspect ratio */
+}
+html {
+        scroll-behavior: smooth;
+    }
+#logo{
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px;
+}
+  
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand"><img src="logo.png" id="logo">  PriceValuePredict</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="predict_price.html">Predict Price</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" >About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="img-container">
+
+<img src="img.jpg" id="img">
+
+</div>
+<div class="img"></div>
+<div class="container mt-5">
+  <h1 class="text-center mb-4" id="about">About</h1>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card border-primary">
+        <div class="card-body">
+          <h5 class="card-title">Accurate Predictions</h5>
+          <p class="card-text">Utilize advanced algorithms to provide precise estimates based on historical data and market trends.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card border-primary">
+        <div class="card-body">
+          <h5 class="card-title">User-Friendly Interface</h5>
+          <p class="card-text">Enjoy a seamless experience with an intuitive and easy-to-navigate interface designed for all users.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card border-primary">
+        <div class="card-body">
+          <h5 class="card-title">Customizable Options</h5>
+          <p class="card-text">Tailor predictions according to specific criteria such as location, property type, and amenities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7 mb-7">
+  <div class="card border-primary">
+    <div class="card-body">
+      <h5 class="card-title">Our Model</h5>
+      <p class="card-text">The Model is Linear Regression and works in the following way.<br>
+        1.Finding a Pattern:<br>
+        2.Best-Fit Line: <br>
+        3.Making Predictions:<br>
+        4.Adjusting the Line<br>
+        5.Using the Model<br></p>
+    </div>
+  </div>
+</div>
+</div>
+<footer>
+  <div class="container">
+    <p></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
